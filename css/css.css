@@ -1,0 +1,92 @@
+@import url("animation.css");
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 70vh;
+    background-image: linear-gradient(to top, rgba(89,106,114, 0.6), rgba(206,220,23, 0.4)), url(
+    "https://myrusakov.ru/images/articles/demo/css3-gradient/fog.jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 3vh;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.head{
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: move 1.6s both;
+}
+.nav{   
+    height: 6vh;
+}
+.nav-menu {
+    padding-top: 1vh;
+    text-align: center;
+    font-size: 3vh;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.nav img{
+    position: absolute;
+    border-radius: 15px;
+    padding-top: 0.5vh;
+    padding-left: 0.5vh;
+    height: 5vh;
+    float: left;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.menu{
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    display: inline;
+}
+.menu a {
+    animation: nav 1.6s both;
+    color: black;
+    padding: 0px 1.5vh 3px 1.5vh;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu a:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black; 
+    transition: width 0.7s;
+}
+
+.menu a:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: red; 
+    transition: width 0.7s;
+}
