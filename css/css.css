@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.head {
+    width: 100%;
+    padding-top: 1vh;
+    background-color: bisque;
+    height: 10vh;
+    min-height: 40px;
+    overflow: hidden;
+    width: 100%;
+    font-size: 3vh;
+}
+
+.head a {
+    color: black;
+    font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
+    font-weight: 700;
+    padding-left: 2vh;
+    padding-top: 2vh;
+    text-decoration: none;
+}
+
+.head_img {
+    font-weight: 700;
+    font-size: 8vh;
+    background: url(img/head.jpg) rgba(0, 0, 0, 0.6);
+	text-align: center;
+	height: 55vh;
+    width: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    text-align: center; /* Текст по центру */
+    color: #fff; /* Цвет текста */
+    padding: 50px 0; 
+}
