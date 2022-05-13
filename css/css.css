@@ -1,7 +1,15 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .head {
@@ -10,6 +18,7 @@ body {
     background-color: bisque;
     height: 10vh;
     min-height: 40px;
+    max-height: 70px;
     overflow: hidden;
     width: 100%;
     font-size: 3vh;
@@ -26,15 +35,20 @@ body {
 
 .head_img {
     font-weight: 700;
-    font-size: 8vh;
-    background: url(img/head.jpg) rgba(0, 0, 0, 0.6);
-	text-align: center;
-	height: 55vh;
-    width: 100%;
+    background: url(img/head.jpg) local;
+	height: 30vw;   
+    object-fit: cover;
     background-size: cover; 
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    text-align: center; /* Текст по центру */
-    color: #fff; /* Цвет текста */
-    padding: 50px 0; 
+}
+
+.head_img p {
+    font-size: 5vh;
+}
+
+@media (min-width: 400px) and (max-width: 300px) {
+    .head_img p {
+        font-size: 3vh;
+    }
 }
