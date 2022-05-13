@@ -21,7 +21,7 @@ html, body {
     max-height: 70px;
     overflow: hidden;
     width: 100%;
-    font-size: 3vh;
+    font-size: calc(24px + 16 * (100vw / 1280));
 }
 
 .head a {
