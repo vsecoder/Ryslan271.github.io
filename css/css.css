@@ -13,28 +13,41 @@ html, body {
 }
 
 .head {
+    top: 0;
+    display: flex;
+    position: fixed;
     width: 100%;
-    padding-top: 1vh;
     background-color: bisque;
-    height: 10vh;
-    min-height: 40px;
+    height: 70px;
     max-height: 70px;
     overflow: hidden;
     width: 100%;
-    font-size: calc(24px + 16 * (100vw / 1280));
+    font-size: calc(20px + 8 * (100vw / 1280));
 }
 
 .head a {
     color: black;
     font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
     font-weight: 700;
-    padding-left: 2vh;
-    padding-top: 2vh;
+    padding-left: 1vh;
+    padding-top: 1vh;
     text-decoration: none;
 }
 
+.nav_win {
+    float: right;
+    font-size: calc(20px + 6 * (100vw / 1280));
+    margin: 0 auto;
+    display: flex;
+    color: black;
+}
+
+.nav_win a {
+    padding: 0 1vw 0 1vw;
+}
+
 .head_img {
-    font-weight: 700;
+    margin-top: 60px;
     background: url(img/head.jpg) local;
 	height: 30vw;   
     object-fit: cover;
@@ -47,8 +60,14 @@ html, body {
     font-size: 5vh;
 }
 
-@media (min-width: 400px) and (max-width: 300px) {
-    .head_img p {
-        font-size: 3vh;
-    }
+.left_nav {
+    background-color: black;
+    width: 20vw;
+    height: 900px;
 }
+
+.main {
+    margin: 0 auto;
+    width: calc(100% - 15vw);
+}
+
